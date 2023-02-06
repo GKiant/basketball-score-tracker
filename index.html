@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Basketball Counter</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="team-container">
+        <h3>HOME</h3>
+        <div class="score-container"><p id="score-home">0</p></div>
+        <div class="score-btn-container">
+          <button class="score-btn" onclick="add1Point('home')">+1</button>
+          <button class="score-btn" onclick="add2Point('home')">+2</button>
+          <button class="score-btn" onclick="add3Point('home')">+3</button>
+        </div>
+      </div>
+      <div class="team-container">
+        <h3>GUEST</h3>
+        <div class="score-container"><p id="score-guest">0</p></div>
+        <div class="score-btn-container">
+          <button class="score-btn" onclick="add1Point('guest')">+1</button>
+          <button class="score-btn" onclick="add2Point('guest')">+2</button>
+          <button class="score-btn" onclick="add3Point('guest')">+3</button>
+        </div>
+      </div>
+    </div>
+    <div class="restart"><button onclick="newGame()">New Game</button></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
